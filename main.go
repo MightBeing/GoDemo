@@ -13,10 +13,10 @@ func main() {
 
 	r.LoadHTMLGlob("templates/*")
 
-	//r.GET("/", func(c *gin.Context) {
-	//	c.String(200, "我是首页")
-	//})
-	//
+	r.GET("/", func(c *gin.Context) {
+		c.String(200, "我是首页")
+	})
+	
 	//r.GET("/users", func(c *gin.Context) {
 	//	c.HTML(200, "userAdd.html", gin.H{})
 	//})
